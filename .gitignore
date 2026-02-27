@@ -1,0 +1,47 @@
+# Session notes (not for public repo)
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Generated outputs (images, logs)
+outputs/
+
+# Models / weights
+models/
+*.ckpt
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Experiment artifacts
+*.json
+*.csv
+wandb/
+runs/
