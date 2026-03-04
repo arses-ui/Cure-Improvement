@@ -35,7 +35,7 @@ from .spectral import (
 
 # Re-use original CURE's attention utilities
 import sys
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / "cure"))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from cure.attention import (
     get_cross_attention_layers,
     apply_weight_update,

@@ -23,13 +23,12 @@ from pathlib import Path
 from diffusers import StableDiffusionPipeline
 
 # Make sure we can import from parent project
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / "cure"))
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from cure import CURE
 from cure.utils import set_seed, save_images, get_default_forget_prompts
 from cure_seq import SequentialCURE
-from experiments.metrics import print_budget_report
+from cure_seq.experiments.metrics import print_budget_report
 
 
 # Imagenette concepts matching CURE paper Table 4

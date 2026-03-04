@@ -15,11 +15,13 @@ Requirements:
     - HuggingFace token with gated model access (huggingface-cli login)
 """
 
+import sys
 import torch
 import argparse
 from pathlib import Path
 from diffusers import StableDiffusion3Pipeline
 
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from cure_dit import SD3CURE
 
 

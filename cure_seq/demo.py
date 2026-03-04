@@ -17,11 +17,11 @@ import argparse
 from pathlib import Path
 from diffusers import StableDiffusionPipeline
 
-from cure_seq import SequentialCURE
-from experiments.metrics import print_budget_report
-
 import sys
-sys.path.insert(0, str(Path(__file__).parent.parent / "cure"))
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from cure_seq import SequentialCURE
+from cure_seq.experiments.metrics import print_budget_report
 from cure import CURE
 from cure.utils import set_seed, save_images, get_default_forget_prompts
 
